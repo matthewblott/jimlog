@@ -12,42 +12,42 @@
 
 ActiveRecord::Schema[8.1].define(version: 2026_09_23_112934) do
   create_table "cardio_sets", force: :cascade do |t|
-    t.datetime "created_at", null: false
+    t.integer "workout_exercise_id", null: false
     t.integer "distance"
     t.string "duration", limit: 8
+    t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "workout_exercise_id", null: false
     t.index ["workout_exercise_id"], name: "index_cardio_sets_on_workout_exercise_id"
   end
 
   create_table "exercises", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.string "exercise_type", default: "weights", null: false
     t.string "name"
+    t.string "exercise_type", default: "weights", null: false
+    t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "weight_sets", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.integer "reps"
-    t.datetime "updated_at", null: false
-    t.integer "weight"
     t.integer "workout_exercise_id", null: false
+    t.integer "reps"
+    t.integer "weight"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["workout_exercise_id"], name: "index_weight_sets_on_workout_exercise_id"
   end
 
   create_table "workout_exercises", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.integer "exercise_id", null: false
-    t.datetime "updated_at", null: false
     t.integer "workout_id", null: false
+    t.integer "exercise_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["exercise_id"], name: "index_workout_exercises_on_exercise_id"
     t.index ["workout_id"], name: "index_workout_exercises_on_workout_id"
   end
 
   create_table "workouts", force: :cascade do |t|
-    t.datetime "created_at", null: false
     t.string "title"
+    t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 

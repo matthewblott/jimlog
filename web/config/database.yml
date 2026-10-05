@@ -23,45 +23,20 @@ auth: &auth
   database: storage/<%= Rails.env %>/auth.sqlite3
   migrations_paths: db/migrate/auth
 
-cable: &cable
-  <<: *default
-  database: storage/<%= Rails.env %>/cable.sqlite3
-  migrations_paths: db/migrate/cable
-
-cache: &cache
-  <<: *default
-  database: storage/<%= Rails.env %>/cache.sqlite3
-  migrations_paths: db/migrate/cache
-
-queue: &queue
-  <<: *default
-  database: storage/<%= Rails.env %>/queue.sqlite3
-  migrations_paths: db/migrate/queue
-
 development:
   tenant:
     <<: *tenant
   auth:
     <<: *auth
-  queue:
-    <<: *queue
 
 test:
   tenant:
     <<: *tenant
   auth:
     <<: *auth
-  queue:
-    <<: *queue
 
 production:
   tenant:
     <<: *tenant
   auth:
     <<: *auth
-  cable:
-    <<: *cable
-  cache:
-    <<: *cache
-  queue:
-    <<: *queue
