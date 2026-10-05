@@ -21,7 +21,6 @@ Perform the necessary migrations:
 ```bash
 rails db:migrate:auth
 rails db:migrate:tenant
-rails db:migrate:queue
 ```
 
 Now you should be good to go:
