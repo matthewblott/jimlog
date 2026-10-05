@@ -15,7 +15,7 @@ android {
     minSdk = 28
     targetSdk = 37
     versionCode = 3
-    versionName = "3"
+    versionName = versionCode.toString()
   }
   buildFeatures {
     compose = true
