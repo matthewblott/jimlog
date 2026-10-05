@@ -15,22 +15,16 @@ android {
     minSdk = 28
     targetSdk = 37
     versionCode = 3
-    versionName = "3"
+    versionName = versionCode.toString()
   }
   buildFeatures {
     compose = true
+    buildConfig = true
   }
   buildTypes {
     release {
       isMinifyEnabled = true
       isShrinkResources = true
-      proguardFiles(
-        getDefaultProguardFile("proguard-android-optimize.txt"),
-        "proguard-rules.pro"
-      )
-      ndk {
-        debugSymbolLevel = "FULL"
-      }
       optimization {
         enable = false
       }
