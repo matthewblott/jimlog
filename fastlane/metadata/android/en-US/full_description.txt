@@ -1,0 +1,1 @@
+A simple workout tracker for recording gym sessions. Track cardio time and distance, or record weights and reps for strength training. Use without an account, or optionally sign in to access your records on other devices.
