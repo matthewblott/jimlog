@@ -14,9 +14,9 @@ import dev.hotwire.core.bridge.KotlinXJsonConverter
 import dev.hotwire.core.config.Hotwire
 import dev.hotwire.navigation.config.registerBridgeComponents
 import dev.hotwire.core.bridge.BridgeComponentFactory
-import com.masilotti.bridgecomponents.toast.ToastComponent
 import dev.hotwire.core.turbo.config.PathConfiguration
 import com.matthewblott.jimlog.components.ButtonComponent
+import com.matthewblott.jimlog.components.ToastComponent
 
 class MainActivity : HotwireActivity() {
   companion object {
