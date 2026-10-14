@@ -190,9 +190,8 @@ Temporary Items
 # End of https://www.toptal.com/developers/gitignore/api/macos,jetbrains,android
 
 # Don't include the release directory
-app/release/*
-!app/release/build/
-app/release/build/*
-!app/release/build/generated/
-app/release/build/generated/*
-!app/release/build/generated/source/
+!app/build/
+app/build/*
+!app/build/generated/
+app/build/generated/*
+!app/build/generated/source/
