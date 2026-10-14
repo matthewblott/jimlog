@@ -4,7 +4,7 @@
 ### Android ###
 # Gradle files
 .gradle/
-build/
+/build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -190,8 +190,7 @@ Temporary Items
 # End of https://www.toptal.com/developers/gitignore/api/macos,jetbrains,android
 
 # Don't include the release directory
-!app/build/
-app/build/*
-!app/build/generated/
-app/build/generated/*
-!app/build/generated/source/
+/app/build/*
+!/app/build/generated/
+/app/build/generated/*
+!/app/build/generated/source/
