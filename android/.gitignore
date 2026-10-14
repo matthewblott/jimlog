@@ -188,3 +188,7 @@ Temporary Items
 *.icloud
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,jetbrains,android
+
+# Don't include the release directory
+app/release
+!app/release/build/generated/source

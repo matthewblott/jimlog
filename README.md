@@ -30,4 +30,16 @@ rails server
 
 Browse to the default Rails development endpoint `http://localhost:3000` and you will see Jimlog's splash page.
 
-The `ios` and `android` projects should just work if you have up to date Xcode and Android Studio versions installed.
+## iOS
+
+The `ios` project should just work if you have an up to date version of Xcode installed.
+
+## Android
+
+The `android` projects should just work if you have an up to date version of Android Studio versions installed and you run the following:
+
+The following needs to be run for `android` to create the `BuildConfig` file used for debugging.
+```
+cd android
+./gradlew :app:generateDebugBuildConfig
+```
