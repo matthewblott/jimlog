@@ -36,10 +36,10 @@ The `ios` project should just work if you have an up to date version of Xcode in
 
 ## Android
 
-The `android` projects should just work if you have an up to date version of Android Studio versions installed and you run the following:
-
-The following needs to be run for `android` to create the `BuildConfig` file used for debugging.
+The following needs to be run for `android` to create the source generated `BuildConfig` file:
 ```
 cd android
 ./gradlew :app:generateDebugBuildConfig
 ```
+
+After that the project should work with an up to date version of Android Studio.
