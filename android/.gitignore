@@ -191,6 +191,3 @@ Temporary Items
 
 # Don't include the release directory
 /app/release/
-# !/app/build/generated/
-# /app/build/generated/*
-# !/app/build/generated/source/
