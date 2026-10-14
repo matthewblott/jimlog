@@ -6,17 +6,6 @@ plugins {
 
 android {
   namespace = "com.matthewblott.jimlog"
-  compileSdk {
-    version = release(37)
-  }
-
-  defaultConfig {
-    applicationId = "com.matthewblott.jimlog"
-    minSdk = 28
-    targetSdk = 37
-    versionCode = 3
-    versionName = "1.0.2"
-  }
   buildFeatures {
     compose = true
     buildConfig = true
@@ -37,6 +26,20 @@ android {
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
+  }
+  compileSdk {
+    version = release(37)
+  }
+  defaultConfig {
+    applicationId = "com.matthewblott.jimlog"
+    minSdk = 28
+    targetSdk = 37
+    versionCode = 3
+    versionName = "1.0.2"
+  }
+  dependenciesInfo {
+    includeInApk = false
+    includeInBundle = false
   }
 }
 
